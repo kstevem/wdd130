@@ -5,10 +5,10 @@ body{
     padding:20px
 }
 :root{
-    --primary-color: #00BBF9;
-    --secondary-color:#FEE440;
-    --accent1-color:#F15BB5;
-    --accent2-color:#9B5DE5;
+    --primary-color: #119DA4;
+    --secondary-color:#19647E;
+    --accent1-color:#FFC857;
+    --accent2-color:#4B3F72;
 
     --heading-font: '', serif;
     --paragraph-font: '', serif;
@@ -59,6 +59,4 @@ nav a:hover {
     background-color:var(--nav-hover-background-color);
 
 }
-
-
 
