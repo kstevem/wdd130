@@ -1,0 +1,70 @@
+@import url("https://fonts.google.com/specimen/Bitter?query=Bitter");
+body{
+    font-family: var(-paragraph-font);
+    max-width: 1000px;
+    padding:20px;
+    margin: 0 auto;
+}
+:root{
+    --primary-color: #00BBF9;
+    --secondary-color:#FEE440;
+    --accent1-color:#ee6bba;
+    --accent2-color:#9B5DE5;
+
+    --heading-font: '', serif;
+    --paragraph-font: '', serif;
+
+    --nav-background-color: ;
+    --nav-link-color: ; 
+    --nav-hover-color: ;
+    --nav-hover-background-color: #;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+}
+
+header{
+
+    padding: 20px;
+    background-color:var(--accent1-color);
+
+}
+
+ div {
+    position: relative;
+    width: auto;
+    height: auto; 
+}
+
+div h1 {
+    position: absolute;
+    font-display: var(--accent2-color);
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+
+    
+}
+div article {
+    position: absolute;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+div article img{
+    float:right;
+}
+div article{
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
