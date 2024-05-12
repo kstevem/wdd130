@@ -12,13 +12,7 @@ body{
     --accent2-color:#9B5DE5;
 
     --heading-font: '', serif;
-    --paragraph-font: '', serif;
-
-    --nav-background-color: ;
-    --nav-link-color: ; 
-    --nav-hover-color: ;
-    --nav-hover-background-color: #;
-    
+    --paragraph-font: '', serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,7 +24,6 @@ header{
 
     padding: 20px;
     background-color:var(--accent1-color);
-
 }
 
  div {
