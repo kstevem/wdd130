@@ -1,0 +1,115 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+
+}
+
+h1 {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    border-bottom: green;
+
+}
+
+p {padding: 0;}
+
+main {
+    max-width: 840px;
+}
+
+aside img {
+    width:200 px;
+    height: auto;
+}
+
+main img {
+    width:150 px;
+    height: auto;
+}
+
+aside {
+    width: 20rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color:#333;
+    text-align: center;
+    margin: 1rem;
+}
+
+img{
+    width: 200;
+    height: auto;
+}
+
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+aside{
+    width: 20em;
+    text-align: center;
+}
+
+main img {
+    float: right
+}
+aside h2{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    background-color: steelblue;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav a {
+    display: block;
+    padding: 0.5 rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; 
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
