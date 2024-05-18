@@ -1,6 +1,6 @@
-@import url("https://fonts.google.com/specimen/Bitter?query=Bitter");
+
 body{
-    font-family: var(-paragraph-font);
+
     max-width: 1000px;
     padding:20px;
     margin: 0 auto;
@@ -35,7 +35,6 @@ header {
 
 div h1 {
     position: absolute;
-    font-display: var(--accent2-color);
     align-items: center;
     color: whitesmoke;
     text-align: center;
