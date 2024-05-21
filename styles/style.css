@@ -81,9 +81,10 @@ main img {
 }
 aside h2{
     position: absolute;
-    top: 47px;
-    left: 150px;
-    text-align: center;
+    top: 30px;
+    left: 102px;
+    color: white;
+    position:absolute;
 }
 header, .grid, footer {
     max-width: 840px;
