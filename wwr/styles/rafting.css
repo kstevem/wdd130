@@ -179,6 +179,7 @@ footer nav a img{
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto;
    margin-inline-start: auto;
+   gap:0;
 }
 
 .figurecaption{
@@ -206,6 +207,7 @@ form{
     padding: 1rem;
     border: 1px solid rgba(0,0,0,0.1);
     background-color: #eee;
+    
    
 
 }
@@ -213,20 +215,21 @@ fieldset{
     display: grid;
     grid-gap: .5rem;
     margin: 1rem;
-    border: 1px solid rgba(o,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
     background-color: silver;
   
 }
 
 legend{
-    padding: 0.5 rem;
+    padding: 0.5rem;
     color: navy;
     font-size: 1.3em;
 
 }
 label, input, button, select, textarea {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 label{
@@ -239,6 +242,7 @@ label{
 input, select, textarea{
     padding: 0.5rem;
     font-size: 1.1rem;
+
 
 }
 
@@ -265,15 +269,35 @@ button:hover {
     background-color:var(--accent1-color);
 }
 
-.form-item{
-    display: grid;
+.form-item {
+    margin-bottom: 15px;
+}
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-item input[type="text"],
+.form-item textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-item input[type="radio"],
+.form-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+.form-item button {
+    padding: 10px 20px;
+    cursor: pointer;
+    width:80%;
+    box-sizing: border-box;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-group label {
+    display: flex;
     align-items: center;
-}
-.column1 {
-    grid-template-columns: 3fr, 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr, 2fr;
+    margin-right: 10px;
 }
