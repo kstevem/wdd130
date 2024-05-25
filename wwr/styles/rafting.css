@@ -1,10 +1,14 @@
-
-body{
-
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: #fff;
     max-width: 1000px;
     padding:20px;
     margin: 0 auto;
+
 }
+
+
 :root{
     --primary-color: #00BBF9;
     --secondary-color:#FEE440;
@@ -83,8 +87,9 @@ header img {
 
 header nav {
 	display: flex;
-	color: navy;
+	color:navy;
 	text-decoration: none;
+    gap: .3em;
 
 
     
@@ -92,11 +97,12 @@ header nav {
 
 header nav a {
 	display: flex;
-	color: navy;
+	color: darkmagenta;
 	text-decoration: none;
     border: 1px solid black;
     background-color: white;
     padding: 5px;
+
 
     
 }
@@ -160,71 +166,114 @@ footer nav a img{
 
 }
 
-.History{
+.companycontact{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
   margin-inline-start: auto;
 
 }
-.History h2{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
 
-}
-
-.History img{
-    justify-content: center;
-    justify-self: center;
-    width: 75%;
-    height: auto;
-
-}
-
-
- .Adventures{
+.Happy_Employees{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto;
-   
+   margin-inline-start: auto;
 }
 
-.Adventures h2{
-    grid-column-start: 1;
-    grid-column-end: 6;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
-    gap: 5px;
-
-}
-
-.Adventures figure img { 
-
-    width: 120%;
-    height: auto; 
-   justify-content: center;
-   align-items:flex-start;   
-  
-}
-.hero h1{
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+.figurecaption{
+    align-items: center;
     text-align: center;
 }
 
-.hero article {
-    max-width: 800px;
-    
+.hero{
+    display: grid;
 }
-.hero article{
+
+.hero article {
+    max-width: 600px;
+    display: flex;
     background-color:rgb(197, 103, 165);
     padding: 30px;
     max-width: fit-content;
     color: white;
+    
+}
+    
+form{
+    width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #eee;
+   
 
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(o,0,0,0.2);
+    padding: 1rem;
+    background-color: silver;
+  
+}
+
+legend{
+    padding: 0.5 rem;
+    color: navy;
+    font-size: 1.3em;
+
+}
+label, input, button, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    text-align: left;
+    padding-right: 1rem;
+    color:black;
+
+}
+
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+
+}
+
+button{
+
+    margin: 1rem;
+    background-color:#00BBF9;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+
+}
+
+button:hover {
+    background-color:var(--accent1-color);
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr, 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr, 2fr;
 }
