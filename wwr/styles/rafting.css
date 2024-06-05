@@ -1,23 +1,34 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    background: #fff;
+    background: var(--neutral-light);
+    color: var(--neutral-dark);
     max-width: 1000px;
     padding:20px;
     margin: 0 auto;
 
 }
 
-
-:root{
-    --primary-color: #00BBF9;
-    --secondary-color:#FEE440;
-    --accent1-color:#ee6bba;
-    --accent2-color:#9B5DE5;
-
+:root {
+    --primary-color: #003366;
+    --secondary-color: #00A9A5;
+    --accent-color: #FF6600;
+    --neutral-light: #F0F0F0;
+    --neutral-dark: #333333;
     --heading-font: '', serif;
     --paragraph-font: '', serif; 
 }
+
+
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav a {
+    color: #003366;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -27,7 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: grid;
     grid-template-columns: auto;
-
+        background-color: var(--primary-color);
+        color: var(--neutral-light);
+        padding: 20px;
+        text-align: center;
 
 }
 
@@ -97,11 +111,11 @@ header nav {
 
 header nav a {
 	display: flex;
-	color: darkmagenta;
+	color: #003366;
 	text-decoration: none;
     border: 1px solid black;
     background-color: white;
-    padding: 5px;
+    padding: 3px;
 
 
     
@@ -300,4 +314,58 @@ button:hover {
     display: flex;
     align-items: center;
     margin-right: 10px;
+}
+
+/* Style for call to action section */
+.call-to-action {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Style for trip descriptions section */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.trip {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Style for trip table section */
+.trip-table {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .trip-descriptions {
+        flex-direction: column;
+    }
+
+    .trip {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
