@@ -1,0 +1,526 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: var(--neutral-light);
+    color: var(--neutral-dark);
+    max-width: 1000px;
+    padding:20px;
+    margin: 0 auto;
+
+}
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #00A9A5;
+    --accent-color: #FF6600;
+    --neutral-light: #F0F0F0;
+    --neutral-dark: #333333;
+    --heading-font: '', serif;
+    --paragraph-font: '', serif; 
+}
+
+
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav a {
+    color: #003366;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+        background-color: var(--primary-color);
+        color: var(--neutral-light);
+        padding: 20px;
+        text-align: center;
+
+}
+
+ div {
+    position: relative;
+    width: auto;
+    height: auto; 
+}
+
+div h1 {
+    position: absolute;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+
+    
+}
+div article {
+    position: absolute;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+div article img{
+    float:right;
+}
+div article{
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+    background-color: skyblue;
+    padding: 20px;
+    
+}
+
+header img {
+	margin: 0 0.25rem 0 1rem;
+	width: 80px;
+	height: auto;
+}
+
+header nav {
+	display: flex;
+	color:navy;
+	text-decoration: none;
+    gap: .3em;
+
+
+    
+}
+
+header nav a {
+	display: flex;
+	color: #003366;
+	text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 3px;
+
+
+    
+}
+
+
+header nav a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+    background-color: skyblue;
+    padding: 20px; 
+}
+footer p{
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+	text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    justify-content: space-between;
+    gap: 1px;
+ 
+}
+footer nav a {
+    display: flex;
+	color: navy;
+	text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px; 
+
+
+}
+
+footer nav a img{
+    display: flex;
+	color: navy;
+	text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px; 
+    gap: 5px;
+      
+
+}
+
+.companycontact{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+  margin-inline-start: auto;
+
+}
+
+.Happy_Employees{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+   margin-inline-start: auto;
+   gap:0;
+}
+
+.figurecaption{
+    align-items: center;
+    text-align: center;
+}
+
+.hero{
+    display: grid;
+}
+
+.hero article {
+    max-width: 600px;
+    display: flex;
+    padding: 30px;
+    max-width: fit-content;
+    background-color: var(--accent-color);
+    color: var(--neutral-light); 
+}
+    
+form{
+    width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #eee;
+    
+   
+
+}
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    background-color: silver;
+  
+}
+
+legend{
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+
+}
+label, input, button, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+label{
+    text-align: left;
+    padding-right: 1rem;
+    color:black;
+
+}
+
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+
+
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+
+}
+
+button{
+
+    margin: 1rem;
+    background-color:#00BBF9;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+
+}
+
+button:hover {
+    background-color:var(--accent1-color);
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-item input[type="text"],
+.form-item textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-item input[type="radio"],
+.form-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+.form-item button {
+    padding: 10px 20px;
+    cursor: pointer;
+    width:80%;
+    box-sizing: border-box;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Style for call to action section */
+.call-to-action {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Style for trip descriptions section */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.trip {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Style for trip table section */
+.trip-table {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .trip-descriptions {
+        flex-direction: column;
+    }
+
+    .trip {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-light);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Newsletter sign-up form */
+.newsletter {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--neutral-light);
+    text-align: center;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-light);
+    border: none;
+    cursor: pointer;
+}
+
+/* Call to action */
+.call-to-action {
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-light);
+    text-align: center;
+}
+
+.call-to-action a {
+    color: var(--neutral-light);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.call-to-action a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* CSS Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: var(--neutral-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item .content {
+    padding: 10px;
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    color: var(--neutral-dark);
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.Adventures {
+    padding: 20px;
+    text-align: center;
+}
+
+.Adventures h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Grid layout for figures */
+.Adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.Adventures figure {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--neutral-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Adventures figcaption {
+    margin-top: 10px;
+    color: var(--neutral-dark);
+}
