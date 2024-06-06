@@ -369,3 +369,120 @@ th, td {
         margin-bottom: 20px;
     }
 }
+
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-light);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Newsletter sign-up form */
+.newsletter {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--neutral-light);
+    text-align: center;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-light);
+    border: none;
+    cursor: pointer;
+}
+
+/* Call to action */
+.call-to-action {
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-light);
+    text-align: center;
+}
+
+.call-to-action a {
+    color: var(--neutral-light);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.call-to-action a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* CSS Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: var(--neutral-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item .content {
+    padding: 10px;
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    color: var(--neutral-dark);
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
