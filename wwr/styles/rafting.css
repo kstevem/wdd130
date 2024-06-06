@@ -201,18 +201,17 @@ footer nav a img{
     text-align: center;
 }
 
-.hero{
+.hero1{
     display: grid;
 }
 
-.hero article {
+.hero1 article {
     max-width: 600px;
     display: flex;
-    background-color:rgb(197, 103, 165);
     padding: 30px;
     max-width: fit-content;
-    color: white;
-    
+    background-color: var(--accent-color);
+    color: var(--neutral-light); 
 }
     
 form{
@@ -383,13 +382,51 @@ th, td {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--neutral-light);
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.hero1 article {
+    position: absolute; /* Positions the article absolutely within the image container */
+    top:38%;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: #FF6600; /* Semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-light);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero2 article {
+    position: flex; /* Positions the article absolutely within the image container */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between items */
+    gap: 20px;
+    top:5%;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: #FF6600; /* Semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 /* Newsletter sign-up form */
@@ -486,3 +523,44 @@ th, td {
         grid-template-columns: 1fr;
     }
 }
+
+
+.Adventures {
+    padding: 20px;
+    text-align: center;
+}
+
+.Adventures h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Grid layout for figures */
+.Adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.Adventures figure {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--neutral-light);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Adventures figcaption {
+    margin-top: 10px;
+    color: var(--neutral-dark);
+}
+
+
